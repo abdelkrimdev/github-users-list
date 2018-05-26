@@ -47,5 +47,8 @@ export const userActions = {
         function failure(error) {
             return { type: userConstants.USER_SPECIFIC_FAILURE, error };
         }
+    },
+    unloadAll: () => {
+        return { type: userConstants.USER_CLEAR_STATE };
     }
 };
