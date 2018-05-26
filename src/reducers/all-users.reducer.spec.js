@@ -6,7 +6,7 @@ import { userConstants } from '../constants/user.constants';
 describe('all users reducer', () => {
     it('should have initial state.', () => {
         const action = { type: 'NON_EXISTING' };
-        expect(allUsers(undefined, action)).toEqual({});
+        expect(allUsers(undefined, action)).toEqual({ users: [] });
     });
 
     it('should return the same state after receiving a non existing action.', () => {
@@ -20,7 +20,8 @@ describe('all users reducer', () => {
             type: userConstants.USER_ALL_REQUEST
         };
         const result = {
-            requesting: true
+            requesting: true,
+            users: []
         };
         Reducer(allUsers).expect(action).toReturnState(result);
     });
@@ -45,6 +46,16 @@ describe('all users reducer', () => {
         const result = {
             requesting: false,
             error: action.error
+        };
+        Reducer(allUsers).expect(action).toReturnState(result);
+    });
+
+    it('should handle CLEAR USERS action.', () => {
+        const action = {
+            type: userConstants.USERS_CLEAR
+        };
+        const result = {
+            users: []
         };
         Reducer(allUsers).expect(action).toReturnState(result);
     });
