@@ -49,6 +49,6 @@ export const userActions = {
         }
     },
     unloadAll: () => {
-        return { type: userConstants.USER_CLEAR_STATE };
+        return { type: userConstants.USERS_CLEAR };
     }
 };

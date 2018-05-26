@@ -31,7 +31,6 @@ describe('user actions', () => {
         expect(getAllUsers.mock.calls.length).toBe(1);
         expect(dispatches[0].getAction()).toEqual({ type: userConstants.USER_ALL_REQUEST });
         expect(dispatches[1].getAction()).toEqual({ type: userConstants.USER_ALL_SUCCESS, users });
-        
     });
 
     it('should fetch a single user from the server.', async () => {
@@ -50,6 +49,13 @@ describe('user actions', () => {
         expect(getSingleUser.mock.calls.length).toBe(1);
         expect(dispatches[0].getAction()).toEqual({ type: userConstants.USER_SPECIFIC_REQUEST });
         expect(dispatches[1].getAction()).toEqual({ type: userConstants.USER_SPECIFIC_SUCCESS, user });
-        
+    });
+
+    it('should create an action to unload users.', async () => {
+        const expectedAction = {
+            type: userConstants.USERS_CLEAR
+        };
+
+        expect(userActions.unloadAll()).toEqual(expectedAction);
     });
 });
