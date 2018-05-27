@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Detail Component. should render correctly. 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserDetail
+    error={undefined}
+    getUser={[Function]}
+    match={
+        Object {
+            "params": Object {
+              "username": "someone",
+            },
+          }
+    }
+    requesting={undefined}
+    store={
+        Object {
+            "dispatch": [Function],
+            "getAction": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "isActionDispatched": [Function],
+            "isActionTypeDispatched": [Function],
+            "subscribe": [Function],
+          }
+    }
+    storeSubscription={
+        Subscription {
+            "listeners": Object {
+              "clear": [Function],
+              "get": [Function],
+              "notify": [Function],
+              "subscribe": [Function],
+            },
+            "onStateChange": [Function],
+            "parentSub": undefined,
+            "store": Object {
+              "dispatch": [Function],
+              "getAction": [Function],
+              "getActions": [Function],
+              "getState": [Function],
+              "isActionDispatched": [Function],
+              "isActionTypeDispatched": [Function],
+              "subscribe": [Function],
+            },
+            "unsubscribe": undefined,
+          }
+    }
+    user={undefined}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <Row
+          gutter={0}
+>
+          <Col
+                    offset={8}
+                    span={8}
+          >
+                    <Divider />
+                    <Link
+                              className="ant-btn"
+                              replace={false}
+                              to="/"
+                    >
+                              Show All
+                    </Link>
+          </Col>
+</Row>,
+      ],
+      "id": "user-detail",
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Col
+            offset={8}
+            span={8}
+>
+            <Divider />
+            <Link
+                        className="ant-btn"
+                        replace={false}
+                        to="/"
+            >
+                        Show All
+            </Link>
+</Col>,
+          "gutter": 0,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              undefined,
+              undefined,
+              <Divider />,
+              <Link
+                className="ant-btn"
+                replace={false}
+                to="/"
+>
+                Show All
+</Link>,
+            ],
+            "offset": 8,
+            "span": 8,
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Show All",
+                "className": "ant-btn",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Show All",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <Row
+            gutter={0}
+>
+            <Col
+                        offset={8}
+                        span={8}
+            >
+                        <Divider />
+                        <Link
+                                    className="ant-btn"
+                                    replace={false}
+                                    to="/"
+                        >
+                                    Show All
+                        </Link>
+            </Col>
+</Row>,
+        ],
+        "id": "user-detail",
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Col
+              offset={8}
+              span={8}
+>
+              <Divider />
+              <Link
+                            className="ant-btn"
+                            replace={false}
+                            to="/"
+              >
+                            Show All
+              </Link>
+</Col>,
+            "gutter": 0,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                undefined,
+                undefined,
+                <Divider />,
+                <Link
+                  className="ant-btn"
+                  replace={false}
+                  to="/"
+>
+                  Show All
+</Link>,
+              ],
+              "offset": 8,
+              "span": 8,
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              undefined,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Show All",
+                  "className": "ant-btn",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Show All",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
