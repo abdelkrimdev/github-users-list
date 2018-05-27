@@ -1,16 +1,23 @@
 {
+  "author": "Abdelkrim Dib",
   "name": "advanon-assessment-task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.5.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "redux-test-utils": "^0.2.2",
     "redux-testkit": "^1.0.6"
   },
   "scripts": {
