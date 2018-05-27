@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 import 'antd/dist/antd.css';
+import './index.css';
 
 import { store } from './helpers/store';
 import UsersList from './containers/UsersList';

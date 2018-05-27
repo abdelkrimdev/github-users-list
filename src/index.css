@@ -1,0 +1,31 @@
+body {
+    padding: 10px 50px;
+}
+
+.title-bar {
+    text-align: center;
+}
+
+.ant-list {
+    margin: 10px;
+    padding: 10px;
+}
+
+.ant-list-split .ant-list-item:last-child {
+    border: 1px solid #e8e8e8;
+    margin: 10px;
+    padding: 10px;
+}
+
+.show-more {
+    text-align: center;
+    margin-top: 12px;
+    height: 32px;
+    line-height: 32px;
+}
+
+#user-detail {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
