@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
-import { store } from './helpers/store'
+import 'antd/dist/antd.css';
+
+import { store } from './helpers/store';
+import UsersList from './containers/UsersList';
+import UserDetail from './containers/UserDetail';
 
 ReactDOM.render(
     <Provider store={ store }>
-        <div>Hello Advanon!</div>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={ UsersList } />
+                <Route path='/user/:username' component={ UserDetail } />
+                <Redirect to='/' />
+            </Switch>
+        </BrowserRouter>
     </Provider>,
     document.getElementById('root')
 );
