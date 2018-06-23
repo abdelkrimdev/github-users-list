@@ -27,9 +27,6 @@ describe('User Detail Component.', () => {
     });
 
     it('should dispatch get user action on user load the page.', () => {
-        const expectedActions = [
-            userActions.getByUsername(username)
-        ];
         expect(store.isActionDispatched(userActions.getByUsername(username))).toBeTruthy();
     });
 

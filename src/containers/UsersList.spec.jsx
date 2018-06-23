@@ -25,9 +25,6 @@ describe('Users List Component.', () => {
     });
 
     it('should dispatch load users action on user opens the page.', () => {
-        const expectedActions = [
-            userActions.getAll()
-        ];
         expect(store.isActionDispatched(userActions.getAll())).toBeTruthy();
     });
 
